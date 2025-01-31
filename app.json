@@ -13,16 +13,34 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jbghostman.loyalty-app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jbghostman.loyalty_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/recoleta-black.otf",
+            "./assets/fonts/recoleta-bold.otf",
+            "./assets/fonts/recoleta-light.otf",
+            "./assets/fonts/recoleta-medium.otf",
+            "./assets/fonts/Recoleta-Regular.otf",
+            "./assets/fonts/recoleta-semibold.otf"
+          ]
+        }
+      ],
+      "expo-router"
+    ]
   }
 }
